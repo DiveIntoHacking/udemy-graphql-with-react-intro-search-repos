@@ -28,6 +28,17 @@ export const SEARCH_REPOSITORIES = gql`
   }
 `
 
+export const ADD_STAR = gql`
+  mutation addStar ($input: AddStarInput!) {
+    addStar (input: $input) {
+      starrable {
+        id
+        viewerHasStarred
+      }
+    }
+  }
+`
+
 export const ME = gql`
   query me {
     user(login: "iteachonudemy") {
