@@ -59,7 +59,7 @@ const DEFAULT_STATE = {
   after: null,
   last: null,
   before: null,
-  query: "フロントエンドエンジニア"
+  query: ""
 }
 
 class App extends Component {
@@ -67,19 +67,22 @@ class App extends Component {
     super(props)
     this.state = DEFAULT_STATE
 
-    this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-  }
 
-  handleChange(event) {
-    this.setState({
-      ...DEFAULT_STATE,
-      query: event.target.value
-    })
+    /* https://reactjs.org/docs/refs-and-the-dom.html#callback-refs */
+    this.textInput = null
+    this.setTextInputRef = element => {
+      this.textInput = element
+    }
   }
 
   handleSubmit(event) {
     event.preventDefault()
+
+    this.setState({
+      ...DEFAULT_STATE,
+      query: this.textInput.value
+    })
   }
 
   goPrevious(search) {
@@ -105,8 +108,13 @@ class App extends Component {
 
     return (
       <ApolloProvider client={client}>
+        {/* https://reactjs.org/docs/forms.html#controlled-components */}
         <form onSubmit={this.handleSubmit}>
-          <input value={query} onChange={this.handleChange} />
+          <input
+            type="text"
+            ref={this.setTextInputRef}
+          />
+          <input type="submit" value="Submit" />
         </form>
         <Query
           query={SEARCH_REPOSITORIES}
