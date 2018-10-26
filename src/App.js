@@ -69,11 +69,8 @@ class App extends Component {
 
     this.handleSubmit = this.handleSubmit.bind(this)
 
-    /* https://reactjs.org/docs/refs-and-the-dom.html#callback-refs */
-    this.textInput = null
-    this.setTextInputRef = element => {
-      this.textInput = element
-    }
+    /* https://reactjs.org/docs/refs-and-the-dom.html#creating-refs */
+    this.myRef = React.createRef()
   }
 
   handleSubmit(event) {
@@ -81,7 +78,7 @@ class App extends Component {
 
     this.setState({
       ...DEFAULT_STATE,
-      query: this.textInput.value
+      query: this.myRef.current.value
     })
   }
 
@@ -112,7 +109,7 @@ class App extends Component {
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
-            ref={this.setTextInputRef}
+            ref={this.myRef}
           />
           <input type="submit" value="Submit" />
         </form>
