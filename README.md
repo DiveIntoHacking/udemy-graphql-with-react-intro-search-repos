@@ -74,3 +74,30 @@ $ git diff origin/apply-query-and-variables..origin/dynamic-search-form
 本プログラムはUdemy教育用のものですので、受講生からのリクエストを最優先していますので、Udemyのコースに設置されている公式のQ&Aにてご指摘の内容をご報告頂ければと思います。(本プログラムはオープンソースプロジェクトではありませんのでGitHubのIssuesでお知らせ頂いても対応出来ない場合がありますのでご了承ください。)
 
 その他、不明な点が有りましたらUdemyのQ&Aにてご質問ください。
+
+## 動画コース一覧
+
+他にも以下のコースをUdemyにて公開中です。
+
+|タイトル|概要|
+|---|---|
+|[モジュールバンドラーwebpackを1日で習得！しかもフルスクラッチでインストールからカスタマイズまでの手順を理解する](https://www.udemy.com/webpack-crash-course/?couponCode=GITHUB-README-FOOTER)|Reactを題材にし各種形式のモジュールをローダー(babel/css/sass/html/eslint)やプラグイン(JS圧縮のカスタム/CSSのファイル分離と圧縮)でバンドルする方法をハンズオンで解説、今回もGitHubにソース完全公開|
+|[フロントエンドエンジニアのためのReact・Reduxアプリケーション開発入門](https://www.udemy.com/react-application-development/?couponCode=GITHUB-REPO-README)|RESTful APIサーバと連携する実践的なCRUDアプリケーション開発手法を学び、今後のフロントエンドWeb開発の標準になり得るReact・Reduxアプリケーション開発をマスターし、もう一段階上のJavsScriptエンジニアになろう|
+|[GraphQL with React入門 - QueryとMutationを学びPaginationの実装にチャレンジ！](https://www.udemy.com/graphql-with-react/?couponCode=GITHUB-README-FOOTER)|GraphQLの言語仕様を学習し、GitHubのGraphQL APIと連携するReactアプリケーションの実装にチャレンジします！React/GraphQL/Apollo等を利用し、近未来を見据えたAPI開発手法を先取りしよう！|
+
+
+<div align='right'>
+Dive into Hacking!
+</div>
+<div align='right'>
+Udemy プログラミング講師
+</div>
+<div align='right'>
+
+[はむ - プログラミングおじさん](https://www.udemy.com/user/76100880-5658-4a37-be77-5525d39a4726/)
+
+</div>
+
+
+
+
