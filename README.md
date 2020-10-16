@@ -90,8 +90,11 @@ $ git diff origin/apply-query-and-variables..origin/dynamic-search-form
 
 ## Docker
 
+Dockerで動かす場合は、以下の手順で起動できます。
+
     $ docker-compose build
     $ docker-compose run --rm app yarn install
+    $ docker-compose up
 
 <div align='right'>
 Dive into Hacking!
